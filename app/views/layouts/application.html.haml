@@ -26,9 +26,9 @@
             %span.icon-bar
             %span.icon-bar
           - if event && event.slug
-            = link_to event.name, event_path(slug: event.slug), class: 'navbar-brand'
+            = link_to image_tag('logo.png'), event_path(slug: event.slug), class: 'navbar-brand'
           - else
-            = link_to "#{Rails.application.class.parent_name}", events_path, class: 'navbar-brand'
+            = link_to image_tag('logo.png'), events_path, class: 'navbar-brand'
 
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
@@ -102,7 +102,7 @@
   - if on_organizer_page?
     .alert-viewer-mode
       .container
-        Viewing as: 
+        Viewing as:
         %strong Organizer
 
   #flash= show_flash

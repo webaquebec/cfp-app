@@ -1,0 +1,12 @@
+.navbar-inverse {
+  background-color: #365c92;
+  border-color: #5791c0;
+
+  .navbar-nav {
+
+    &> li > a { color: #fff; }
+    .dropdown > a .caret { border-top-color: #72bcdc; }
+  }
+
+  .navbar-brand img { height: 30px; }
+}
